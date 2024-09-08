@@ -1,12 +1,31 @@
+/* spruce up the visible part of the HTML code */
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-size:large;
+}
+
 body{
     overflow-x:hidden; /* no one likes horizontal scroll ...  */
     background-color:grey;
 }
 
-.advertise1{
-    display:flex;
-    justify-content: center;
+
+
+/* anchor pseudo-classes applying styles to hyperlinks in HTML page (ref: 307.2 p.32) */
+a:link{
+    color:lightskyblue; /* unvisited link */
 }
+a:visited{
+    color:purple;
+}
+a:hover{
+    color:white;        /* "a:hover" must be after "a:link" and "a:visited" for maximum effect */
+}
+a:active{
+    color:yellow;       /* "a:active" should always be after "a:hover" in order */
+}
+
 
 h2{
     color:white;
@@ -15,11 +34,25 @@ h2{
 hr{
     border: 10px solid green;
 }
+
 .section3{
     display:flex;
     flex-wrap: wrap;
 }
 
+/* .flex-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+
+#box1{
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    width:70%;
+    margin:auto;
+}
 .carousel{
     width:600px;
     height:400px;
@@ -30,6 +63,7 @@ hr{
 
 /* separate each list elements by 0.5 of font-size */
 li{
+    text
     margin-bottom: 0.5rem;
 }
 /* .background{
@@ -64,3 +98,21 @@ ul {
     background-color: #04AA6D;
    } */
    
+/* section{
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding-left: auto;
+    align-content: center;
+} */
+
+section{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
