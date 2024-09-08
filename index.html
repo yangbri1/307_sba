@@ -148,46 +148,55 @@
   </div>
     
 
-  <section>
+  <header>
     <h1>Natural wonders</h1>
-    <p><em>From the highest highs to the lowest lows</em></p>
-  </section>
-    
-  <!-- autoplaying carousel template from Bootstrap -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/everest.jpg" class="d-block w-100" alt="Picture of the Mt. Everest" title="Mount Everest">
+    <p style="display: flex; flex-wrap: wrap; font-style:italic; ">
+      From the highest highs to the lowest lows</p>
+    <!-- autoplaying carousel template from Bootstrap -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/everest.jpg" class="d-block w-100" alt="Picture of the Mt. Everest" title="Mount Everest">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/mariana_trench.jpg" class="d-block w-100" alt="Picture of the Mariana Trench" title="Mariana Trench">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/amazon_rainforest.jpg" class="d-block w-100" alt="Picture of the Amazon Rainforest" title="Amazon Rainforest">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="./images/mariana_trench.jpg" class="d-block w-100" alt="Picture of the Mariana Trench" title="Mariana Trench">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/amazon_rainforest.jpg" class="d-block w-100" alt="Picture of the Amazon Rainforest" title="Amazon Rainforest">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </header>
+
+  <aside>
+
+  </aside>
 
   <hr>
-  <h2> Other areas of interests </h2>
 
-  <!-- <div class="section3"> -->
-    <ul>
-      <li><a href="./images/mongolian_steppes.jpg" target="_self">Mongolian Steppes</a>  - Birthplace of <abbr title="Founder, Chieftain of the Mongol Empire">Genghis Khan</abbr>.</li>
-      <li><a href="./images/redwood_forest.jpg" target="_self">Redwood Forest</a> - Home to the <abbr title="Hyperion tree is the tallest (fireproof) living tree on Earth">tallest trees</abbr> in the world. </li>
-      <li><a href="./images/sahara_desert.jpg" target="_self">Sahara Desert</a> - <abbr title="Ranges from 136.4°C (daytime) to 25°C (nighttime)">Polar</abbr> opposites. </li>
-      <li><a href="https://deadsea.com/articles-tips/interesting-facts/why-is-the-dead-sea-called-the-dead-sea/" target="_self">Dead Sea</a> - <abbr title="Too salty to fish (9.6x saltier than the ocean) but high salt deposits allows some Jesus-like activities">Walking</abbr> on water.</li>
-      <li><a href="https://www.nasa.gov/podcasts/gravity-assist/gravity-assist-its-raining-diamonds-on-these-planets/" target="_self">Uranus & Neptune</a> - Dripping <abbr title="While we have liquid rain, Uranus and Neptune literally rain solid diamonds due to their atmospheric composition">diamonds</abbr>. </li>
-    </ul>
-  <!-- </div> -->
+  <article>
+    <h2> Other areas of interests </h2>
+      <ul>
+        <li><a href="./images/mongolian_steppes.jpg" target="_self">Mongolian Steppes</a> - Birthplace of 
+          <abbr title="Founder, Chieftain of the Mongol Empire">Genghis Khan</abbr>.</li>
+        <li><a href="./images/redwood_forest.jpg" target="_self">Redwood Forest</a> - Home to the 
+          <abbr title="Hyperion tree is the tallest (fireproof) living tree on Earth">tallest trees</abbr> in the world. </li>
+        <li><a href="./images/sahara_desert.jpg" target="_self">Sahara Desert</a> - 
+          <abbr title="Ranges from 136.4°F (daytime) to 25°F (nighttime)">Polar</abbr> opposites. </li>
+        <li><a href="https://deadsea.com/articles-tips/interesting-facts/why-is-the-dead-sea-called-the-dead-sea/" target="_self">Dead Sea</a> - 
+          <abbr title="Too salty to fish (9.6x saltier than the ocean) but high salt deposits allows some Jesus-like activities">Walking</abbr> on water.</li>
+        <li><a href="https://www.nasa.gov/podcasts/gravity-assist/gravity-assist-its-raining-diamonds-on-these-planets/" target="_self">Uranus & Neptune</a> - Dripping 
+          <abbr title="While we have liquid rain, Uranus and Neptune literally rain solid diamonds due to their atmospheric composition">diamonds</abbr>. </li>
+      </ul>
+  </article>
 
   
 
@@ -200,8 +209,10 @@
     <a href="#top" title="directs you back up">You have reached the end <img src="./images/top_icon_anchor.jpg" alt="back to top" ></a>
   </section>
       
+  <hr>
+  
   <footer>
-    
+    <nav aria-label="primary"></nav>
   </footer>
 </body>
 </html>
