@@ -3,7 +3,36 @@ body{
     background-color:grey;
 }
 
-.background{
+.advertise1{
+    display:flex;
+    justify-content: center;
+}
+
+h2{
+    color:white;
+}
+
+hr{
+    border: 10px solid green;
+}
+.section3{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.carousel{
+    width:600px;
+    height:400px;
+    margin:auto;
+    box-shadow: 10px 10px 10px 5px;
+    opacity: 0.9;
+  }
+
+/* separate each list elements by 0.5 of font-size */
+li{
+    margin-bottom: 0.5rem;
+}
+/* .background{
     background-image: url(https://pin.it/6VaQJU4NM);
 }
 
@@ -33,5 +62,5 @@ ul {
    }
    .active {
     background-color: #04AA6D;
-   }
+   } */
    
