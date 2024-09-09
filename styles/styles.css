@@ -54,9 +54,25 @@ nav{
     position:fixed;
     top: 0;
 }
-.section3{
+
+table{
     display:flex;
-    flex-wrap: wrap;
+    justify-content:center; 
+    padding-top:2%;
+    
+    
+}
+
+th, td, tr{
+    border: 1px solid black;
+    th{
+        font-weight:bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:#219ebc;
+    }
+    td{
+        background-color:aliceblue
+    }
 }
 
 /* .flex-container{
@@ -70,19 +86,23 @@ nav{
     /* width: 100%; */
     height: 100%;
     width:70%;
-    margin:0% 10% ;
+    /* margin:0% 10% ; */
+    margin:auto;
 }
 
 header{
-    padding-left: 10%;  /* move 15% inside the container b/t content & left border */
+    /* display:flex;
+    justify-content:start; */
+    text-align: center;
+    /*padding-left: 10%;   move 15% inside the container b/t content & left border */
     /* "margin-left: 15%" (move 15% outside container b/t left border & edge) would also work */
 }
 
 .carousel{
     display:flex;
     justify-content:start;
-    margin-right:auto;
-    /* margin:auto;  -- would center it*/
+    /* margin-right:auto; */
+    /* margin:auto;  -- would center it */
     width:700px;
     height:465px;
     box-shadow: 10px 10px 10px 5px;
@@ -93,13 +113,15 @@ aside{
     display:flex;
     justify-content:end;
     margin-left:auto;
-    padding-left:auto;
-    background-color:#FAEDCD;
-}
+    /* padding-left:auto; */
+    /* background-color:#FAEDCD; */
+} 
+
 /* separate each list elements by 0.5 of font-size */
 li{
     margin-bottom: 0.5rem;
 }
+
 /* .background{
     background-image: url(https://pin.it/6VaQJU4NM);
 }
@@ -160,6 +182,13 @@ section{
     flex-wrap:wrap;
     
 }
+fieldset{
+    display:flex; 
+    justify-content: end; 
+    flex-direction:column; 
+    border:1px blue solid;
+}
+
 
 footer{
     display:flex;
@@ -175,7 +204,7 @@ footer > p{
 /* accomodate for different different viewing */
 /* changes width to 100% view when the viewport is 426px or smaller (mobile[large]) */
 @media screen and (max-width: 426px){
-    .section2, .section3{
+    body{
         width: 100%; 
     }
 }
