@@ -63,28 +63,28 @@ Share GIFs.url>)
 [text](<references/Duck Hunt 🕹️ Play on CrazyGames.url>) 
 
 - - - -
-## To provide uniformity, every webpage stayed with a similar layout
+## *To provide uniformity, every webpage stayed with a similar layout
 
-## Each webpage has a gif on the very top of the page acting as an banner ad
+## *Each webpage has a gif on the very top of the page acting as an banner ad
 
-## The Nav bar was constructed using Bootstrap library
-### Although additional drop down menus, modal with a loading spinner element was my own twist to it
+## *The Nav bar was constructed using Bootstrap library
+### *Although additional drop down menus, modal with a loading spinner element was my own twist to it
 
-## Search bar centered in the middle next to a form dropdown selection for which categories is preferred by the user
+## *Search bar centered in the middle next to a form dropdown selection for which categories is preferred by the user
 
-## Onto the <header> tag, with the <h1> and <p> were centered using display:flex;
-### Meanwhile the carousel was borrowed from Bootstrap shows a timed slideshow of different nature-related images
-### Also the carousel would perform a spin animation whenever a mouse hovers over it
+## *Onto the header tag, with the h1 and p were centered using display:flex;
+### *Meanwhile the carousel was borrowed from Bootstrap shows a timed slideshow of different nature-related images
+### *Also the carousel would perform a spin animation whenever a mouse hovers over it
 
-## Underneath shows a table with lorem ipsum's, thoretically explaining their past conditions, current evaluations, and future outlooks
+## *Underneath shows a table with lorem ipsum's, thoretically explaining their past conditions, current evaluations, and future outlooks
 
-## Next, there lies another form for the user if they are willing to sign up for a newsletter via email
+## *Next, there lies another form for the user if they are willing to sign up for a newsletter via email
 
-## Additional information pertaining to the subject matter is laid out and hyperlink
+## *Additional information pertaining to the subject matter is laid out and hyperlink
 ## (so far attempted to attach as many "alt" and "title" attributes so it could be more accessible)
 
-## Below is 1 same in-page anchor tag to redirect the user back to the top
-### The other two gives the user a choice of picking either the Endangered Species or Invasive Species route
+## *Below is 1 same in-page anchor tag to redirect the user back to the top
+### *The other two gives the user a choice of picking either the Endangered Species or Invasive Species route
 
-## Finally in the <footer>, there contains the socials and extra descriptions about the website
+## *Finally in the footer, there contains the socials and extra descriptions about the website
 
