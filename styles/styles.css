@@ -3,37 +3,52 @@
 *{
     font-family:'Courier New', Courier, monospace;
     font-size:large;
+    font-weight:bold;
 }
 
 body{
     overflow-x:hidden; /* no one likes horizontal scroll ...  */
-    background-color:grey;
-    margin-top:5%;
+    background-color:#fca311;
+    /* margin-top:5%; -- prevent existing top element from being covered up by fixed menu */
 }
 
+div.sticky{
+    display:flex;
+    position: sticky;
+    top:8%;
+    background-color:lightblue;
+    padding:80px; /* expands the area b/t the content and border by 50px */
+    font-size:20px;
+    opacity: 0.9;
+    /* z-index  gives depth to an image & it only works w/ "position" or "flex" elements
+    in this case, giving this sticky a "z-index: 1" allows it to pop in front of all surround elements */ 
+    z-index: 1; 
 
+    height: 0px;
+  }
 
 /* anchor pseudo-classes applying styles to hyperlinks in HTML page (ref: 307.2 p.32) */
 a:link{
-    color:lightskyblue; /* unvisited link */
+    color:#8ecae6; /* unvisited link */
 }
 a:visited{
-    color:purple;
+    color:#219ebc;
 }
 a:hover{
     color:white;        /* "a:hover" must be after "a:link" and "a:visited" for maximum effect */
 }
 a:active{
-    color:yellow;       /* "a:active" should always be after "a:hover" in order */
+    color:rgba(133, 19, 19, 0.2);       /* "a:active" should always be after "a:hover" in order */
 }
 
 
-h2{
+h1{
     color:white;
+    font-weight:bolder;
 }
 
 hr{
-    border: 10px solid green;
+    border: 10px solid #9d0208;
 }
 
 nav{
@@ -69,12 +84,19 @@ header{
     justify-content:start;
     margin-right:auto;
     /* margin:auto;  -- would center it*/
-    width:600px;
-    height:400px;
+    width:700px;
+    height:465px;
     box-shadow: 10px 10px 10px 5px;
     opacity: 0.9; /* slightly translucent */
-  }
+}
 
+aside{
+    display:flex;
+    justify-content:end;
+    margin-left:auto;
+    padding-left:auto;
+    background-color:#FAEDCD;
+}
 /* separate each list elements by 0.5 of font-size */
 li{
     margin-bottom: 0.5rem;
@@ -114,10 +136,12 @@ ul {
 
 article{
     border: 1px solid red;
+    font-weight:bold;
 }
 
 article > h2{
-    font-weight: bold;
+    color:#023047;
+    font-family:cursive;
 }
 /* section{
     display:flex;
@@ -136,4 +160,23 @@ section{
     justify-content: center;
     flex-wrap:wrap;
     
+}
+
+footer{
+    display:flex;
+    
+}
+footer > p{
+    
+    text-align:right;
+    font-size:medium;
+    margin-left:auto;
+}
+
+/* accomodate for different different viewing */
+/* changes width to 100% view when the viewport is 426px or smaller (mobile[large]) */
+@media screen and (max-width: 426px){
+    .section2, .section3{
+        width: 100%; 
+    }
 }

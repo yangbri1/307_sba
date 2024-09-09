@@ -17,11 +17,18 @@
 
     <!-- internal css styling (2nd in precedence) within <style> block  -->
      <style>
+      
       /* uses flexbox grid to format the class .advertise1 container */
       .advertise1{
         display:flex;
         justify-content: center;
       }
+
+      /* created a navbar custom color  (ref. geeksforgeeks ) */
+      .navbar-custom{
+        background-color:#fb8500;
+      }
+
      </style>
     
 </head>
@@ -31,6 +38,12 @@
   <!-- sets up a same page anchor to the top -->
   <a name="top"></a>
 
+  <!-- cookies prompt using sticky element -->
+  <div class="sticky"><h3>We accept cookies!</h3>>
+    <p>This website uses cookies to enhance your browsing experience, serve personalized content, wile analyzing our web traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+  </div>
+
+
   <!-- placed within a div container to allow external styling in styles.css  -->
   <div class="advertise1">
     <a href="https://www.crazygames.com/game/duck-hunt" target="_blank">
@@ -38,9 +51,9 @@
   </div>
   
   <!-- navigation bar #1 on top of the page -->
-  <nav class="navbar navbar-expand-lg navbar fixed-top bg-body-tertiary nav nav-fill" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg navbar-custom nav nav-fill" data-bs-theme="dark">
     <div class="container-fluid"> <!-- inserting "fixed-top" into "<nav class= navbar ..." oddly disables the link tab -->
-      <a class="navbar-brand" href="#"><nav class="navbar bg-body-tertiary">
+      <a class="navbar-brand" href="#"><nav class="navbar navbar-custom" > <!-- "bg-body-warning" taken out from here and above navbar-->
         <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#"> -->
 
@@ -61,13 +74,19 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li> -->
 
-          <li class="nav-item dropdown">
-            
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Home
-            </a>
+            </a> -->
+          <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </button>  
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><img src="./images/rubber-ducky-duck.gif" alt="cowboy quack-quack"><h5>Cowboy Quack-Quack</h5>Swimmer</a></li>
+              <li><a class="dropdown-item" href="#">
+                <img src="./images/rubber-ducky-duck.gif" alt="cowboy quack-quack" width="100px">
+                <h5>Cowboy Quack-Quack</h5>Swimmer</a>
+              </li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Account Settings ⚙️</a></li>
               <li><a class="dropdown-item" href="#">Sign Out</a></li>
@@ -82,12 +101,12 @@
                   <pre title="External Link">External🔗</pre>
                 </button>
                 
-                <!-- Modal -->
+                <!-- Modal block -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Redirecting...
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Alert: Redirecting...
 
                             <!-- throw in a spinner animation while modal is open-->
                             <div class="spinner-border text-info" role="status">
@@ -101,8 +120,8 @@
                         Are you sure you want to leave this page?
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                       </div>
                     </div>
                   </div>
@@ -119,7 +138,7 @@
           </button>
           <form class="dropdown-menu p-4">
             <div class="mb-3">
-              <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+              <label for="exampleDropdownFormEmail2" class="form-label">Username or Email address</label>
               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
             </div>
             <div class="mb-3">
@@ -179,11 +198,12 @@
   </header>
 
   <aside>
-    
+    <h3>Mt. Everest</h3>
   </aside>
 
   <hr>
 
+  <!-- article block of other wonders -->
   <article>
     <h2> Other areas of interests </h2>
       <ul>
@@ -200,21 +220,32 @@
       </ul>
   </article>
 
-  
-
 
   <p>hello b<sup>o</sup>y</p>
 
   <!-- same page anchor button to top of page, used <section> for formatting -->
   <section>
     <!-- note: both of the encompassing text & image inherits the "title" key-value trait from the "a href" parent tag -->
-    <a href="#top" title="directs you back up">You have reached the end <img src="./images/top_icon_anchor.jpg" alt="back to top" ></a>
+    <a href="#top" title="directs you back up">Click to return back top<img src="./images/top_icon_anchor.jpg" alt="button to navigate back top" ></a>
   </section>
       
   <hr>
   
   <footer>
     <nav aria-label="primary"></nav>
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook"> 
+      <img src="./images/icons8-facebook-50.png" alt="facebook"></a> 
+    <a href="https://www.twitter.com/" target="_blank" title="Twitter"> 
+      <img src="./images/icons8-twitter-50.png" alt="twitter"></a>
+    <a href="https://www.gmail.com/" target="_blank" title="Gmail"> 
+      <img src="./images/icons8-gmail-50.png" alt="gmail"></a>
+    <a href="https://www.wechat.com/" target="_blank" title="Wehat"> 
+      <img src="./images/icons8-wechat-50.png" alt="wechat"></a>
+    <a href="https://www.qq.com/" target="_blank" title="QQ"> 
+      <img src="./images/icons8-qq-50.png" alt="qq"></a>
+    <p>This website is neither endorsed nor affiliated by any means to any country, tourism boards, or third party entities.</p>
   </footer>
+ 
+ 
 </body>
 </html>
