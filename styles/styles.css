@@ -159,16 +159,13 @@ fieldset{
 }
 
 section > div{
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 2s, height 2s, transform 2s;
+    
+    transition: width 2s, height 2s, transform 5s;
 }
   
 section > div:hover{
-    width: 300px;
-    height: 300px;
-    transform: rotate(180deg);
+
+    transform: rotate(480deg);
 }
 
 footer{
