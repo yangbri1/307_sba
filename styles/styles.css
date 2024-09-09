@@ -12,20 +12,19 @@ body{
     /* margin-top:5%; -- prevent existing top element from being covered up by fixed menu */
 }
 
-div.sticky{
+/* div.sticky{
     display:flex;
     position: sticky;
-    top:8%;
+    top:80%;
     background-color:lightblue;
-    padding:80px; /* expands the area b/t the content and border by 50px */
+    padding:90px;  expands the area b/t the content and border by 50px 
     font-size:20px;
     opacity: 0.9;
-    /* z-index  gives depth to an image & it only works w/ "position" or "flex" elements
-    in this case, giving this sticky a "z-index: 1" allows it to pop in front of all surround elements */ 
+     z-index  gives depth to an image & it only works w/ "position" or "flex" elements
+    in this case, giving this sticky a "z-index: 1" allows it to pop in front of all surround elements 
     z-index: 1; 
 
-    height: 0px;
-  }
+  } */
 
 /* anchor pseudo-classes applying styles to hyperlinks in HTML page (ref: 307.2 p.32) */
 a:link{
