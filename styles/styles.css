@@ -99,10 +99,10 @@ header{
 }
 
 .carousel{
-    display:flex;
-    justify-content:start;
+    /* display:flex;
+    justify-content:center; */
     /* margin-right:auto; */
-    /* margin:auto;  -- would center it */
+    margin:auto;  /*-- would center it*/
     width:700px;
     height:465px;
     box-shadow: 10px 10px 10px 5px;
@@ -121,39 +121,6 @@ aside{
 li{
     margin-bottom: 0.5rem;
 }
-
-/* .background{
-    background-image: url(https://pin.it/6VaQJU4NM);
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-   }
-   li {
-    float: left;
-    border-right: 1px solid #bbb;
-   }
-   li:last-child {
-    border-right: none;
-   }
-   li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-   }
-   li a:hover:not(.active) {
-    background-color: #111;
-   }
-   .active {
-    background-color: #04AA6D;
-   } */
-   
 
 article{
     border: 1px solid red;
@@ -178,10 +145,12 @@ article > h2{
 
 section{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap:wrap;
     
 }
+
+
 fieldset{
     display:flex; 
     justify-content: end; 
@@ -189,11 +158,24 @@ fieldset{
     border:1px blue solid;
 }
 
+section > div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+  
+section > div:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
 
 footer{
     display:flex;
     
 }
+
 footer > p{
     
     text-align:right;
